@@ -1,0 +1,25 @@
+---
+interface Props {
+
+first: string;
+second: string;
+}
+
+const { first, second } = Astro.props;
+---
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+/>
+<div class="relative px-12 my-12 flex w-full items-center justify-center">
+	<div class="absolute top-96 left-0 lg:top-96 lg:left-96 w-16 h-16 lg:w-52 lg:h-52 blur-[180px] bg-gradient-to-r from-blue-300 to-blue-500 rounded-3xl  z-[-1]"></div>
+<img-comparison-slider>
+  <img slot="first" class="rounded-3xl w-[1120px]" src={first} alt="Img" />
+  <img slot="second"  class="rounded-3xl   w-[1120px]" src={second}  alt="Img" />
+</img-comparison-slider>
+</div>

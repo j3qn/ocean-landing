@@ -1,0 +1,14 @@
+---
+interface Props{
+    tag: string
+}
+
+const { tag } = Astro.props
+---
+    <li
+        class="text-gray-300 flex h-12 items-center gap-x-3.5 rounded-full border border-white border-opacity-[0.13] px-[21px] md:h-11 md:gap-5 md:gap-x-3 md:px-5 sm:h-8 sm:gap-x-2.5 sm:px-[11px]"
+    >
+    <slot/>
+        <span class="leading-none sm:text-14">{tag}</span>
+    </li>
+

@@ -1,0 +1,39 @@
+---
+interface Props {
+	description: string;
+    title: string;
+    price: string;
+    features: Array<string>;
+    href: string;
+}
+
+
+import { ViewTransitions, fade } from 'astro:transitions';
+
+const {title, price, description, features, href} = Astro.props;
+---
+
+
+
+<ViewTransitions  fallback="swap" />
+
+<div  class="bg-[#0D0D0D]   w-96 rounded-xl p-6">
+<h3 class="font-medium text-xl text-white text-center">{title}</h3>
+<h2 class="text-gray-200 font-semibold text-5xl  mt-2 text-center">{price}</h2>
+<p class="font-medium text-base text-zinc-400 text-center mt-2">{description}</p>
+<div class="w-full h-[2px] bg-zinc-900 my-4"></div>
+{features.map((feature) => (
+   <div   class="flex items-center">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-paperclip text-purple-400 mr-4" width="15" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M15 7l-6.5 6.5a1.5 1.5 0 0 0 3 3l6.5 -6.5a3 3 0 0 0 -6 -6l-6.5 6.5a4.5 4.5 0 0 0 9 9l6.5 -6.5"></path>
+</svg>
+    <p class="text-gray-200 font-medium text-base  mt-2">{feature}</p></div>
+
+))}
+<a href={href}><button   class="bg-[#1B1B1B] hover:bg-black/20 transitions-all duration-200 w-full py-2 rounded-xl text-gray-200 font-medium mt-10">Get Started</button></a>
+</div>
+
+
+

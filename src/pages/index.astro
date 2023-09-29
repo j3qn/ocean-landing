@@ -1,0 +1,280 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
+import ButtonC from '../components/ButtonC.astro';
+import Cards from '../components/Cards.astro';
+import CardAd from '../components/CardAd.astro';
+import PriceCard from '../components/PriceCard.astro';
+import { fade } from 'astro:transitions';
+import Footer from '../components/Footer.astro';
+import Slider from '../components/Slider.astro';
+
+---
+
+<main class="">
+
+<Layout title="Title">
+
+		<Navbar />
+
+
+
+		<div  id="home" class="relative mt-20 xl:mt-40 px-10 flex flex-col items-center justify-center">
+			<div class="hidden lg:flex absolute top-0 left-0 w-36 h-36 blur-[140px] bg-gradient-to-r from-blue-400 to-blue-500 rounded-3xl z-[-1]"></div>
+			<div class="hidden lg:flex absolute top-96 right-0 w-48 h-48 blur-[180px] bg-gradient-to-r from-blue-400 to-cyan-500 rounded-3xl  z-[-1]"></div>
+			<button onclick="location.href='https:\/\/discord.gg\/scanner'" class="mb-4 max-w-xl font-medium flex items-center border px-3 py-1 border-gray-600/80 rounded-full hover:border-gray-500 duration-300 transitions-all">
+				<p class="text-gray-300 text-xs" >Join now our Discord </p>
+				<div class="bg-gray-600 h-3 w-[1px] mx-4"></div>
+				<p class="text-xs">
+					<span class="bg-gradient-to-r from-blue-400 bg-clip-text text-transparent to-blue-500">
+					  Discord
+					</span>
+					<span class="text-gray-300">&rarr;</span>
+				  </p>
+				</button>
+			<h1 class="text-6xl lg:text-7xl xl:text-8xl text-white font-semibold text-center">Most advanced<br>screenshare tool.</h1>
+			<p class="text-center mt-3 text-gray-400 font-medium max-w-xl">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium totam doloribus non. Itaque, totam
+			</p>
+
+
+			<ButtonC content='Start Now'/>
+			<div class="flex mt-3 items-center">
+
+				<div class="h-3 w-3 rounded-full bg-blue-500 mr-2"></div>
+			<p class="font-medium text-sm text-gray-300">+3000 <span class="text-gray-500 font-medium text-sm">users trust us</span> </p>
+			</div>
+
+		
+
+
+
+		</div>
+		<section id="features" class="mt-28 flex flex-col justify-center">
+			<h2  class="text-center text-white font-medium text-5xl">A reliable solution for cheaters</h2>
+			<div  class="w-full flex justify-center items-center text-center">
+			<p class="text-base text-center max-w-full mx-4 xl:mx-0 xl:max-w-lg mt-5 font-medium text-zinc-500">Discover why Ocean's quality and service surpass everything.
+			</p>
+		</div>
+		<div class="mt-16 flex justify-center items-center  ">
+<div class="grid  grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-4">
+		<Cards title='Custom Strings' description='We offer a clean and customizable service.'>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ballpen-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+				<path d="M17.828 2a3 3 0 0 1 1.977 .743l.145 .136l1.171 1.17a3 3 0 0 1 .136 4.1l-.136 .144l-1.706 1.707l2.292 2.293a1 1 0 0 1 .083 1.32l-.083 .094l-4 4a1 1 0 0 1 -1.497 -1.32l.083 -.094l3.292 -3.293l-1.586 -1.585l-7.464 7.464a3.828 3.828 0 0 1 -2.474 1.114l-.233 .008c-.674 0 -1.33 -.178 -1.905 -.508l-1.216 1.214a1 1 0 0 1 -1.497 -1.32l.083 -.094l1.214 -1.216a3.828 3.828 0 0 1 .454 -4.442l.16 -.17l10.586 -10.586a3 3 0 0 1 1.923 -.873l.198 -.006zm0 2a1 1 0 0 0 -.608 .206l-.099 .087l-1.707 1.707l2.586 2.585l1.707 -1.706a1 1 0 0 0 .284 -.576l.01 -.131a1 1 0 0 0 -.207 -.609l-.087 -.099l-1.171 -1.171a1 1 0 0 0 -.708 -.293z" stroke-width="0" fill="currentColor"></path>
+			 </svg>
+			</Cards>
+			<Cards title='Fast Scanner' description='Ocean will take no longer than 30 seconds.'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alarm-plus-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M16 6.072a8 8 0 1 1 -11.995 7.213l-.005 -.285l.005 -.285a8 8 0 0 1 11.995 -6.643zm-4 3.928a1 1 0 0 0 -1 1v1h-1l-.117 .007a1 1 0 0 0 .117 1.993h1v1l.007 .117a1 1 0 0 0 1.993 -.117v-1h1l.117 -.007a1 1 0 0 0 -.117 -1.993h-1v-1l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor"></path>
+					<path d="M6.412 3.191a1 1 0 0 1 1.273 1.539l-.097 .08l-2.75 2a1 1 0 0 1 -1.273 -1.54l.097 -.08l2.75 -2z" stroke-width="0" fill="currentColor"></path>
+					<path d="M16.191 3.412a1 1 0 0 1 1.291 -.288l.106 .067l2.75 2a1 1 0 0 1 -1.07 1.685l-.106 -.067l-2.75 -2a1 1 0 0 1 -.22 -1.397z" stroke-width="0" fill="currentColor"></path>
+				 </svg>
+			</Cards>
+			<Cards title='24/7 Support' description='We offer enviable support'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock-square-rounded-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M12 2c-.218 0 -.432 .002 -.642 .005l-.616 .017l-.299 .013l-.579 .034l-.553 .046c-4.785 .464 -6.732 2.411 -7.196 7.196l-.046 .553l-.034 .579c-.005 .098 -.01 .198 -.013 .299l-.017 .616l-.004 .318l-.001 .324c0 .218 .002 .432 .005 .642l.017 .616l.013 .299l.034 .579l.046 .553c.464 4.785 2.411 6.732 7.196 7.196l.553 .046l.579 .034c.098 .005 .198 .01 .299 .013l.616 .017l.642 .005l.642 -.005l.616 -.017l.299 -.013l.579 -.034l.553 -.046c4.785 -.464 6.732 -2.411 7.196 -7.196l.046 -.553l.034 -.579c.005 -.098 .01 -.198 .013 -.299l.017 -.616l.005 -.642l-.005 -.642l-.017 -.616l-.013 -.299l-.034 -.579l-.046 -.553c-.464 -4.785 -2.411 -6.732 -7.196 -7.196l-.553 -.046l-.579 -.034a28.058 28.058 0 0 0 -.299 -.013l-.616 -.017l-.318 -.004l-.324 -.001zm0 4a3 3 0 0 1 2.995 2.824l.005 .176v1a2 2 0 0 1 1.995 1.85l.005 .15v3a2 2 0 0 1 -1.85 1.995l-.15 .005h-6a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 1.85 -1.995l.15 -.005v-1a3 3 0 0 1 3 -3zm3 6h-6v3h6v-3zm-3 -4a1 1 0 0 0 -.993 .883l-.007 .117v1h2v-1a1 1 0 0 0 -1 -1z" fill="currentColor" stroke-width="0"></path>
+				 </svg>
+			</Cards>
+			<Cards title='Real Detections' description='Our detections are verified by various minds and digital forensics services.			'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-target" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+					<path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0"></path>
+					<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+				 </svg>
+			</Cards>
+			<Cards title='Public API' description='The opportunity for developers to automate the tool to their liking'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-access-point" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M12 12l0 .01"></path>
+					<path d="M14.828 9.172a4 4 0 0 1 0 5.656"></path>
+					<path d="M17.657 6.343a8 8 0 0 1 0 11.314"></path>
+					<path d="M9.168 14.828a4 4 0 0 1 0 -5.656"></path>
+					<path d="M6.337 17.657a8 8 0 0 1 0 -11.314"></path>
+				 </svg>
+			</Cards>
+			<Cards  title='Ease of use'  description="In just 3 clicks, you'll get unimaginable quality.">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-click" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M3 12l3 0"></path>
+					<path d="M12 3l0 3"></path>
+					<path d="M7.8 7.8l-2.2 -2.2"></path>
+					<path d="M16.2 7.8l2.2 -2.2"></path>
+					<path d="M7.8 16.2l-2.2 2.2"></path>
+					<path d="M12 12l9 3l-4 2l-2 4l-3 -9"></path>
+				 </svg>
+			</Cards>	
+
+</div>
+
+</div>
+		
+	</section>	
+
+	<div class="my-20 flex items-center justify-center">
+
+	<CardAd title='Explore and join now our Discord Community' button='Join Now' href='owo'/>
+	
+</div>
+<section id="prices" class="mt-24 relative">
+	
+	<div class="absolute top-96 right-0 w-48 h-48 blur-[180px] bg-gradient-to-r from-purple-300 to-purple-500 rounded-3xl  z-[-1]"></div>
+	<div class="relative flex flex-col justify-center">
+		<h2 class="text-center text-white font-medium text-5xl">Start detecting cheaters
+		</h2>
+		<div class="flex justify-center ">
+		<svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-12 text-center  w-96 fill-purple-400/90 rotate-180 z-[-1]" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path></svg>
+		</div><div  class="w-full flex justify-center items-center text-center">
+			<p class="text-base text-center max-w-full mx-4 xl:mx-0 xl:max-w-lg mt-8 font-medium text-zinc-500">Take a look at our prices, designed for all audiences.
+			</p>
+		</div>
+	</div>
+	
+
+	<div class="mt-6 flex justify-center items-center">
+		<button id="fivembutton" class="relative w-96 bg-[#0D0D0D]/70 py-3 rounded-l-full text-white font-medium before:absolute before:-righ-t0 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-right-48 after:-top-48 after:bg-purple-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden"  data-spotlight>FiveM</button>
+		<button id="enterprisebutton" class="relative w-96 bg-[#0D0D0D] py-3 rounded-r-full text-white font-medium before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-pink-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden" data-spotlight>Enterprise</button>
+	</div>
+<div class="my-12 flex justify-center items-center">
+
+<div  id="FiveM" class="flex  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-3">
+<PriceCard  title='FiveM Monthly' price='$9,99' features={['Short-Term Quality Service', "Multiple Detections", "Full-Time Support", "Customizable"]}  href="/prices/monthly" description='Are you looking to try the tool?'/>
+<PriceCard  title='FiveM 6 Months' price='$29,99' features={['Long-Term Quality Service', "Multiple Detections", "Full-Time Support", "Customizable"]} href="/prices/6months" description='Do you need ocean for a longer period?'/>
+<PriceCard  title='FiveM Lifetime' price='$49,99' features={['Lifetime Quality Service', "Multiple Detections", "Full-Time Support", "Customizable"]} href="/prices/lifetime" description='Do you need ocean for lifetime?'/>
+</div>
+<div  id="Enterprise" class="hidden grid  grid-cols-1 md:grid-cols-2 gap-3">
+	<PriceCard  title='Enterprise 6 Months' price='$59,99' features={['Long-Term Quality Service', "Multiple Detections", "Full-Time Support", "Customizable"]}   href="/prices/enterprise" description='Have a small Screenshare team?	'/>
+	<PriceCard  title='Enterprise+ 6 Months' price='$79,99' features={['Long-Term Quality Service', "Multiple Detections", "Full-Time Support", "Customizable"]} href="/prices/enterpriseplus" description='Have a large Screenshare team?	'/>
+	
+</div>
+
+</section >
+<section class="mt-24 relative">
+	<div class="relative flex flex-col justify-center">
+		<h2 class="text-center text-white font-medium text-5xl">Start detecting cheaters
+		</h2>
+		<div class="flex justify-center ">
+			<svg width="264" height="27" viewBox="0 0 264 27" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="absolute text-center  -z-10 h-auto fill-blue-500"><path d="M185.325 24.8907C154.48 18.2032 121.55 22.7747 91.3418 24.0161C82.6556 24.3733 73.9036 25.8213 65.1335 25.4389C63.9896 25.3892 59.0047 25.2164 57.8978 23.8081C57.7533 23.6248 61.5232 22.8198 63.36 22.4712C66.9315 21.7933 70.5212 21.2751 74.0855 20.5631C83.456 18.6923 93.102 17.6832 102.673 16.7406C127.24 14.3225 170.876 7.47944 196.181 15.4811C197.435 15.8776 193.659 15.4567 192.398 15.4416C190.325 15.4174 188.25 15.3647 186.176 15.3303C179.412 15.2192 172.567 14.9232 165.84 15.1179C144.16 15.7438 122.249 15.1295 100.663 16.4621C94.1675 16.8634 87.7304 17.563 81.2254 17.9096C77.4574 18.1103 77.6406 18.2162 73.711 18.1399C72.0072 18.1067 67.3776 18.7743 68.5716 17.5705C70.6744 15.4497 78.1215 15.8288 80.9238 15.3511C93.7193 13.1719 106.409 10.4024 119.343 8.79838C152.507 4.6856 186.709 4.02814 220.565 4.84274C234.415 5.17595 248.046 2.61129 261.995 4.20956C228.104 -0.0312298 193.595 1.3173 160.148 2.09342C122.49 2.96732 84.8555 3.69234 47.2887 5.3076C31.8662 5.97047 17.1265 9.5975 1.58033 9.64829"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+		</div><div  class="w-full flex justify-center items-center text-center">
+			<p class="text-base text-center max-w-full mx-4 xl:mx-0 xl:max-w-lg mt-8 font-medium text-zinc-500">Your experience before and after using Ocean reflected in a simple image.
+			</p>
+		</div>
+	</div>
+<Slider first='https://cdn.discordapp.com/attachments/1110029912129146931/1156631648402673664/Before.webp?ex=6515acaa&is=65145b2a&hm=528907f7407e0bbdf8641e03ec7b3de67eb7c60d131ab8200dd707193c12b40e&' second='https://cdn.discordapp.com/attachments/1110029912129146931/1156631435378163782/After.webp?ex=6515ac77&is=65145af7&hm=f2f268f02edddbdb730f4dbdac851efd90ed1ff65e634bdc789390529735c9a7&'/>
+</section>
+
+
+<Footer />
+</Layout>
+
+
+<script>
+	class Spotlight {
+  constructor(containerElement) {
+    this.container = containerElement;
+    this.cards = Array.from(this.container.children);
+    this.mouse = {
+      x: 0,
+      y: 0,
+    };
+    this.containerSize = {
+      w: 0,
+      h: 0,
+    };
+    this.initContainer = this.initContainer.bind(this);
+    this.onMouseMove = this.onMouseMove.bind(this);
+    this.init();
+  }
+
+  initContainer() {
+    this.containerSize.w = this.container.offsetWidth;
+    this.containerSize.h = this.container.offsetHeight;
+  }
+
+  onMouseMove(event) {
+    const { clientX, clientY } = event;
+    const rect = this.container.getBoundingClientRect();
+    const { w, h } = this.containerSize;
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
+    const inside = x < w && x > 0 && y < h && y > 0;
+    if (inside) {
+      this.mouse.x = x;
+      this.mouse.y = y;
+      this.cards.forEach((card) => {
+        const cardX = -(card.getBoundingClientRect().left - rect.left) + this.mouse.x;
+        const cardY = -(card.getBoundingClientRect().top - rect.top) + this.mouse.y;
+        card.style.setProperty('--mouse-x', `${cardX}px`);
+        card.style.setProperty('--mouse-y', `${cardY}px`);
+      });
+    }
+  }
+
+  init() {
+    this.initContainer();
+    window.addEventListener('resize', this.initContainer);
+    window.addEventListener('mousemove', this.onMouseMove);
+  }
+}
+
+
+const spotlights = document.querySelectorAll('[data-spotlight]');
+spotlights.forEach((spotlight) => {
+  new Spotlight(spotlight);
+});
+</script>
+
+
+<script>
+
+    const fivemButton = document.getElementById("fivembutton");
+    const enterpriseButton = document.getElementById("enterprisebutton");
+    const fivemDiv = document.getElementById("FiveM");
+    const enterpriseDiv = document.getElementById("Enterprise");
+
+    function showFiveM() {
+        fivemDiv.classList.remove("hidden");
+        enterpriseDiv.classList.add("hidden");
+		fivemButton.classList.remove('bg-[#0D0D0D]');
+		fivemButton.classList.add('bg-[#0D0D0D]/70');
+		enterpriseButton.classList.remove('bg-[#0D0D0D]/70');
+		enterpriseButton.classList.add('bg-[#0D0D0D]');
+		
+    }
+
+
+    function showEnterprise() {
+        fivemDiv.classList.add("hidden");
+        enterpriseDiv.classList.remove("hidden");
+		enterpriseButton.classList.remove('bg-[#0D0D0D]');
+		enterpriseButton.classList.add('bg-[#0D0D0D]/70');
+		fivemButton.classList.remove('bg-[#0D0D0D]/70');
+		fivemButton.classList.add('bg-[#0D0D0D]');
+		
+    }
+
+
+    fivemButton.addEventListener("click", showFiveM);
+    enterpriseButton.addEventListener("click", showEnterprise);
+
+    showFiveM();
+</script>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+
+</main>
+
+
+
+
+
+
